@@ -57,12 +57,36 @@ public class Main {
         public static void main(String[] args) {
             int[] array = {2,7,6,8,9,21,34,56,32,12,37};
             int max = 0;
+            int position = 0;
+
+            for(int i =0; i < array.length; i++){
+                if(array[i] > max){
+                   max = array[i];
+                   position = i;}}
+            System.out.println("max: " + max);
+            System.out.println("tổng số đầu + số cuối: " + (array[0] + array[array.length-1]));
+
+            int sumx = 0;
+            for(int i =0; i < array.length; i++){
+                if (array[i] % 2 == 0) {
+                    sumx = sumx + array[i];
+                }
+            }
+            System.out.println("tổng các số chẵn: " + sumx);
+                }
+
+            }
 
 
-        }
 
 
-            Scanner sc = new Scanner(System.in);
-            System.out.println("n: ");
+
+
+
+
+
+
+
+
 }
 
